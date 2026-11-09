@@ -62,7 +62,57 @@
         clear: 'Очистить',
         tabTasks: 'Задачи',
         tabCommits: 'Коммиты',
-        commitsEmpty: 'Коммитов пока нет. Нажми «Импорт коммитов» и выбери .workspace/commits.json.',
+        tabDevlog: 'Devlog',
+        devlogTitle: 'Девлог проекта',
+        devlogSub: 'Пост в задачу дня: задачи, стримы и анонсы — в свои каналы.',
+        kindDevlog: 'Девлог',
+        kindStream: 'Стрим',
+        kindAnnounce: 'Анонс',
+        postRu: 'Текст для русской аудитории',
+        postEn: 'Text for the English audience',
+        publish: 'Опубликовать',
+        publishing: 'Отправляю…',
+        sent: 'Отправлено',
+        someFailed: 'Часть каналов не приняла пост',
+        noChannels: 'Каналов пока нет. Открой настройки и добавь.',
+        channelsSettings: 'Каналы',
+        botToken: 'Telegram bot token',
+        addChannel: 'Добавить канал',
+        saveSettings: 'Сохранить',
+        importJson: 'Импорт JSON',
+        importJsonHint: 'Вставь массив каналов и нажми «Добавить из JSON».',
+        settings: 'Настройки',
+        tasksSection: 'Задачи для поста',
+        groupDoing: 'В работе',
+        groupDone: 'Готовые',
+        groupPublished: 'Опубликованные',
+        hideFromSuggestions: 'Перенести в «Опубликованные»',
+        targetLang: 'Язык перевода',
+        importDone: 'Импортировано задач: ',
+        templateSaved: 'Шаблон сохранён',
+        save: 'Сохранить',
+        attach: 'Прикрепить',
+        removeImage: 'Убрать',
+        translate: 'Перевести',
+        translating: 'Перевожу…',
+        needKey: 'Для перевода нужен ключ DeepSeek в настройках',
+        deepseekKey: 'DeepSeek API key',
+        templates: 'Шаблоны',
+        saveTemplate: 'Сохранить как шаблон',
+        templateName: 'Название шаблона',
+        noTemplates: 'Шаблонов пока нет. Напиши текст и сохрани как шаблон.',
+        insert: 'Вставить',
+        preview: 'Предпросмотр',
+        emptyList: 'Пусто',
+        history: 'История постов',
+        name: 'Название',
+        platform: 'Площадка',
+        kind: 'Тип',
+        lang: 'Язык',
+        chatId: 'chat_id',
+        threadId: 'thread_id',
+        webhook: 'Вебхук',
+        commitsEmpty: 'Коммитов пока нет. Нажми «Импорт коммитов» и выбери .kb/commits.json.',
         importCommits: 'Импорт коммитов',
         commitDetails: 'Коммит',
         author: 'Автор',
@@ -176,7 +226,57 @@
         clear: 'Clear',
         tabTasks: 'Tasks',
         tabCommits: 'Commits',
-        commitsEmpty: 'No commits yet. Press “Import commits” and choose .workspace/commits.json.',
+        tabDevlog: 'Devlog',
+        devlogTitle: 'Project devlog',
+        devlogSub: 'Task of the day, streams and announcements — into their channels.',
+        kindDevlog: 'Devlog',
+        kindStream: 'Stream',
+        kindAnnounce: 'Announcement',
+        postRu: 'Text for the Russian audience',
+        postEn: 'Text for the English audience',
+        publish: 'Publish',
+        publishing: 'Sending…',
+        sent: 'Sent',
+        someFailed: 'Some channels rejected the post',
+        noChannels: 'No channels yet. Open settings and add one.',
+        channelsSettings: 'Channels',
+        botToken: 'Telegram bot token',
+        addChannel: 'Add channel',
+        saveSettings: 'Save',
+        importJson: 'JSON import',
+        importJsonHint: 'Paste the channels array and press “Add from JSON”.',
+        settings: 'Settings',
+        tasksSection: 'Tasks for the post',
+        groupDoing: 'In progress',
+        groupDone: 'Done',
+        groupPublished: 'Published',
+        hideFromSuggestions: 'Move to Published',
+        targetLang: 'Translation language',
+        importDone: 'Imported tasks: ',
+        templateSaved: 'Template saved',
+        save: 'Save',
+        attach: 'Attach',
+        removeImage: 'Remove',
+        translate: 'Translate',
+        translating: 'Translating…',
+        needKey: 'Translation needs a DeepSeek key in settings',
+        deepseekKey: 'DeepSeek API key',
+        templates: 'Templates',
+        saveTemplate: 'Save as template',
+        templateName: 'Template name',
+        noTemplates: 'No templates yet. Write a post and save it as a template.',
+        insert: 'Insert',
+        preview: 'Preview',
+        emptyList: 'Empty',
+        history: 'Post history',
+        name: 'Name',
+        platform: 'Platform',
+        kind: 'Kind',
+        lang: 'Language',
+        chatId: 'chat_id',
+        threadId: 'thread_id',
+        webhook: 'Webhook',
+        commitsEmpty: 'No commits yet. Press “Import commits” and choose .kb/commits.json.',
         importCommits: 'Import commits',
         commitDetails: 'Commit',
         author: 'Author',
@@ -330,8 +430,8 @@
 .ws-chip.primary { border-color: rgba(77,107,254,0.55); color: #3b5bdb; background: rgba(77,107,254,0.07); }
 .ws-chip.danger:hover { color: #cf222e; border-color: rgba(207,34,46,0.5); background: rgba(207,34,46,0.08); }
 .ws-icon-btn {
-  width: 28px; height: 28px; border-radius: 8px; border: 1px solid rgba(127,127,127,0.24);
-  background: transparent; color: var(--dsw-alias-label-secondary, #666); font-size: 14px;
+  width: 28px; height: 28px; border-radius: 4px; border: none;
+  background: transparent; color: var(--dsw-alias-label-secondary, #666);
   cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
 }
 .ws-icon-btn:hover { background: rgba(127,127,127,0.12); color: var(--dsw-alias-label-primary, #111); }
@@ -441,6 +541,135 @@
 .ws-branch-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
 .ws-commit-action { flex: none; align-self: center; }
 .ws-commit-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; margin-left: auto; flex: none; }
+.ws-spoiler { display: flex; flex-direction: column; gap: 4px; }
+.ws-spoiler-head {
+  display: flex; align-items: center; gap: 8px;
+  padding: 7px 9px; border-radius: 9px; cursor: pointer;
+  border: 1px solid rgba(127,127,127,0.2); background: transparent;
+  color: var(--dsw-alias-label-primary, #111); font: inherit; font-size: 12px; font-weight: 600;
+}
+.ws-spoiler-head:hover { background: rgba(127,127,127,0.08); }
+.ws-spoiler-count { font-size: 11px; color: var(--dsw-alias-label-tertiary, #8a8f98); font-variant-numeric: tabular-nums; }
+.ws-task-list { display: flex; flex-direction: column; gap: 4px; padding: 2px 0 4px 8px; }
+.ws-editor-toolbar { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; margin-bottom: 4px; }
+.ws-md-btn {
+  width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center;
+  border: none; background: transparent; color: var(--dsw-alias-label-secondary, #666);
+  border-radius: 6px; cursor: pointer; font: inherit; font-size: 11.5px; font-weight: 700;
+}
+.ws-md-btn:hover { background: rgba(127,127,127,0.12); color: var(--dsw-alias-label-primary, #111); }
+.ws-gallery { display: flex; flex-wrap: wrap; gap: 8px; }
+.ws-gallery-item { position: relative; }
+.ws-gallery-item img { height: 74px; border-radius: 8px; border: 1px solid rgba(127,127,127,0.22); object-fit: cover; }
+.ws-gallery-remove {
+  position: absolute; top: -6px; right: -6px; width: 18px; height: 18px; border-radius: 50%;
+  border: 1px solid rgba(127,127,127,0.3); background: var(--dsw-alias-bg-base, #fff);
+  color: var(--dsw-alias-label-secondary, #666); font-size: 11px; line-height: 1; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.ws-composer-card {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 16px; border-radius: 16px;
+  border: 1px solid rgba(127,127,127,0.18);
+  background: var(--dsw-alias-bg-layer-1, #fff);
+  box-shadow: 0 2px 10px rgba(16,24,40,0.06);
+}
+.ws-composer-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.ws-toolbar { display: flex; align-items: center; gap: 6px; }
+.ws-editor { display: flex; flex-direction: column; gap: 8px; }
+.ws-editor-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.ws-editor textarea {
+  width: 100%; box-sizing: border-box; resize: vertical;
+  border: 1px solid rgba(127,127,127,0.24); border-radius: 10px;
+  background: var(--dsw-alias-bg-base, #fff); color: inherit;
+  font: inherit; font-size: 12.5px; line-height: 18px; padding: 10px 12px;
+}
+.ws-editor textarea:focus-visible { outline: 2px solid rgba(77,107,254,0.55); outline-offset: 1px; }
+.ws-preview {
+  min-height: 110px; padding: 10px 12px; border-radius: 10px;
+  border: 1px dashed rgba(127,127,127,0.3); background: rgba(127,127,127,0.04);
+  font-size: 12.5px; line-height: 19px; white-space: normal; overflow-wrap: anywhere;
+}
+.ws-preview pre, .ws-preview code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px;
+  background: rgba(127,127,127,0.12); border-radius: 6px; padding: 1px 5px;
+}
+.ws-preview pre { padding: 8px 10px; overflow: auto; }
+.ws-preview a { color: var(--dsw-alias-link, #3b5bdb); }
+.ws-publish { height: 30px; padding: 0 16px; font-weight: 600; }
+.ws-segment { display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: rgba(127,127,127,0.09); }
+.ws-segment .ws-chip {
+  border: none; background: transparent; height: 26px; padding: 0 12px;
+  border-radius: 6px; font-size: 12px; font-weight: 600;
+  color: var(--dsw-alias-label-secondary, #9aa0a6);
+}
+.ws-segment .ws-chip:hover { background: rgba(127,127,127,0.12); color: inherit; }
+.ws-segment .ws-chip.primary { background: var(--dsw-alias-bg-base, #fff); color: #5865F2; box-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+.ws-editor-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.ws-head-tools { display: flex; align-items: center; gap: 6px; }
+.ws-editor-toolbar { border: none; margin: 0; padding: 0; }
+.ws-spoiler-head {
+  background: transparent; border: none; border-radius: 6px; height: 28px; padding: 0 9px;
+  color: var(--dsw-alias-label-secondary, #9aa0a6); font-weight: 500;
+}
+.ws-spoiler-head:hover { background: rgba(127,127,127,0.1); color: inherit; }
+.ws-spoiler-head.open { background: rgba(88,101,242,0.15); color: #b3b9ff; }
+.ws-spoiler-count { background: transparent; opacity: 0.75; font-weight: 500; padding: 0; min-width: 0; height: auto; }
+.ws-hide-check {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px;
+  color: var(--dsw-alias-label-secondary, #9aa0a6); cursor: pointer;
+}
+.ws-hide-check input { accent-color: #5865F2; width: 14px; height: 14px; margin: 0; }
+.ws-spoiler-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.ws-spoiler-head {
+  height: 30px; padding: 0 10px; border-radius: 4px; gap: 6px;
+  background: rgba(127,127,127,0.08); border: 1px solid rgba(127,127,127,0.14);
+  font-size: 12px; font-weight: 600; color: inherit;
+}
+.ws-spoiler-head:hover { background: rgba(127,127,127,0.14); }
+.ws-spoiler-head.open { background: rgba(88,101,242,0.18); border-color: rgba(88,101,242,0.55); color: #c9cdfb; }
+.ws-spoiler-count {
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px;
+  background: rgba(127,127,127,0.18); font-size: 10.5px; font-weight: 600;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.ws-task-item { padding: 6px 8px; border-radius: 4px; }
+.ws-task-item.active { background: rgba(88,101,242,0.18); border-color: rgba(88,101,242,0.5); }
+.ws-channel {
+  display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 9px;
+  border-radius: 4px; border: 1px solid rgba(127,127,127,0.14);
+  background: rgba(127,127,127,0.06); font-size: 11.5px; cursor: pointer;
+}
+.ws-channel:hover { background: rgba(127,127,127,0.12); }
+.ws-channel input[type="checkbox"] { accent-color: #5865F2; width: 14px; height: 14px; margin: 0; }
+.ws-chip.ws-publish {
+  height: 32px; padding: 0 16px; border-radius: 4px; font-weight: 600;
+  background: #5865F2; color: #fff; border: 1px solid transparent;
+}
+.ws-chip.ws-publish:hover { background: #4752c4; color: #fff; }
+.ws-chip.ws-publish:disabled { opacity: 0.6; }
+.ws-md-btn { width: 28px; height: 28px; border-radius: 4px; }
+.ws-md-btn:hover { background: rgba(127,127,127,0.16); }
+.ws-editor-toolbar { gap: 1px; padding-bottom: 6px; border-bottom: 1px solid rgba(127,127,127,0.12); margin-bottom: 8px; }
+.ws-composer-card { padding: 16px 18px; border-radius: 12px; gap: 14px; }
+.ws-editor textarea { border-radius: 6px; background: rgba(127,127,127,0.06); }
+.ws-editor textarea:focus-visible { outline: 2px solid #5865F2; outline-offset: 0; }
+.ws-spoiler-head.open { background: rgba(77,107,254,0.12); border-color: rgba(77,107,254,0.45); }
+.ws-task-thumb {
+  width: 26px; height: 26px; border-radius: 6px; object-fit: cover; flex: none;
+  border: 1px solid rgba(127,127,127,0.25);
+}
+.ws-task-thumb-empty {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(127,127,127,0.12); font-size: 13px;
+}
+.ws-task-item { display: flex; align-items: center; gap: 8px; }
+.ws-task-item {
+  text-align: left; padding: 7px 9px; border-radius: 8px; border: 1px solid transparent;
+  background: transparent; color: inherit; font: inherit; font-size: 12px; cursor: pointer;
+}
+.ws-task-item:hover { background: rgba(127,127,127,0.1); border-color: rgba(127,127,127,0.22); }
+.ws-task-item.active { background: rgba(77,107,254,0.1); border-color: rgba(77,107,254,0.45); }
 .ws-commit-mini { display: flex; align-items: baseline; gap: 8px; text-align: left; padding: 6px 8px; border-radius: 8px; border: 1px solid rgba(127,127,127,0.18); background: transparent; color: inherit; font: inherit; cursor: pointer; }
 .ws-commit-mini:hover { background: rgba(127,127,127,0.1); }
 .ws-commit-mini-date { margin-left: auto; font-size: 10.5px; color: var(--dsw-alias-label-tertiary, #8a8f98); }
@@ -467,6 +696,24 @@
 `;
 
     // ---------- storage ----------
+
+    /** Переносит данные прежних версий (kb.tasks.*) в нейтральные ключи. */
+    const LEGACY_NAMES = ['status', 'project', 'links', 'main', 'board', 'deleted', 'commits', 'commits.meta', 'tab', 'lang', 'pack'];
+
+    function migrateLegacyStorage() {
+      for (const name of LEGACY_NAMES) {
+        const nextKey = 'workspace.' + name;
+        const oldKey = 'kb.tasks.' + name;
+        try {
+          if (window.localStorage.getItem(nextKey) === null) {
+            const value = window.localStorage.getItem(oldKey);
+            if (value !== null) window.localStorage.setItem(nextKey, value);
+          }
+        } catch (error) {
+          /* ignore */
+        }
+      }
+    }
 
     function readJSON(key, fallback) {
       try {
@@ -1090,6 +1337,694 @@
       ]));
     }
 
+    // ---------- devlog ----------
+
+    const DEVLOG_CHANNELS_KEY = 'workspace.devlog.channels';
+    const DEVLOG_TOKEN_KEY = 'workspace.devlog.token';
+    const DEVLOG_FEED_KEY = 'workspace.devlog.feed';
+    const DEVLOG_TEMPLATES_KEY = 'workspace.devlog.templates';
+    const DEVLOG_DEEPSEEK_KEY = 'workspace.devlog.deepseek';
+    const DEVLOG_TARGET_KEY = 'workspace.devlog.target';
+    const DEVLOG_PUBLISHED_KEY = 'workspace.devlog.published';
+    const DEVLOG_HIDDEN_KEY = 'workspace.devlog.hidden';
+
+    const KINDS = [
+      { id: 'devlog', label: 'kindDevlog' },
+      { id: 'stream', label: 'kindStream' },
+      { id: 'announce', label: 'kindAnnounce' },
+    ];
+
+    const LANGS = [
+      { code: 'en', label: 'English' },
+      { code: 'es', label: 'Español' },
+      { code: 'de', label: 'Deutsch' },
+      { code: 'fr', label: 'Français' },
+      { code: 'pt', label: 'Português' },
+      { code: 'it', label: 'Italiano' },
+      { code: 'tr', label: 'Türkçe' },
+      { code: 'hi', label: 'हिन्दी' },
+      { code: 'ar', label: 'العربية' },
+      { code: 'zh', label: '中文' },
+      { code: 'ja', label: '日本語' },
+      { code: 'id', label: 'Bahasa Indonesia' },
+    ];
+
+    function newChannel() {
+      return {
+        id: 'ch-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5),
+        name: '',
+        platform: 'telegram',
+        kind: 'devlog',
+        lang: 'ru',
+        chatId: '',
+        threadId: '',
+        webhook: '',
+      };
+    }
+
+    function DevlogSettings({ channels, token, deepseek, target, onSave, onClose, t }) {
+      const [draft, setDraft] = useState(channels.map((item) => ({ ...item })));
+      const [secret, setSecret] = useState(token);
+      const [apiKey, setApiKey] = useState(deepseek);
+      const [lang, setLang] = useState(target);
+      const [bulk, setBulk] = useState('');
+
+      const patch = (index, key, value) => {
+        setDraft(draft.map((item, position) => (position === index ? { ...item, [key]: value } : item)));
+      };
+
+      const field = (index, key, placeholder, width) => h('input', {
+        key: key,
+        type: 'text',
+        value: String(draft[index][key] || ''),
+        placeholder: placeholder,
+        onChange: (event) => patch(index, key, event.target.value),
+        style: { width: width, height: '26px', padding: '0 7px', borderRadius: '7px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '11.5px' },
+      });
+
+      const select = (index, key, options) => h('select', {
+        key: key,
+        value: draft[index][key],
+        onChange: (event) => patch(index, key, event.target.value),
+        style: { height: '26px', borderRadius: '7px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '11.5px' },
+      }, options.map((option) => h('option', { key: option.value, value: option.value }, option.label)));
+
+      return h('div', {
+        className: 'ws-modal-mask',
+        onMouseDown: (event) => { if (event.target === event.currentTarget) onClose(); },
+      }, h('div', { className: 'ws-modal', style: { width: 'min(860px, 100%)' } }, [
+        h('div', { className: 'ws-modal-top', key: 'top' }, [
+          h('h2', { className: 'ws-modal-title', key: 'title' }, t('settings')),
+          h('button', { key: 'close', type: 'button', className: 'ws-modal-close', onClick: onClose }, '\u00d7'),
+        ]),
+        h('div', { className: 'ws-modal-body', key: 'body' }, [
+          h('label', { className: 'ws-section', key: 'token' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('botToken')),
+            h('input', {
+              key: 'input', type: 'password', value: secret,
+              onChange: (event) => setSecret(event.target.value),
+              placeholder: '123456:AA...',
+              style: { height: '30px', padding: '0 9px', borderRadius: '8px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '12px' },
+            }),
+          ]),
+          h('label', { className: 'ws-section', key: 'deepseek' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('deepseekKey')),
+            h('input', {
+              key: 'input', type: 'password', value: apiKey,
+              onChange: (event) => setApiKey(event.target.value),
+              placeholder: 'sk-...',
+              style: { height: '30px', padding: '0 9px', borderRadius: '8px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '12px' },
+            }),
+          ]),
+          h('label', { className: 'ws-section', key: 'target' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('targetLang')),
+            h('select', {
+              key: 'select', value: lang,
+              onChange: (event) => setLang(event.target.value),
+              style: { height: '30px', borderRadius: '8px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '12px' },
+            }, LANGS.map((item) => h('option', { key: item.code, value: item.code }, item.label))),
+          ]),
+          h('div', { className: 'ws-section', key: 'bulk' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('importJson')),
+            h('div', { className: 'ws-section-text', key: 'hint' }, t('importJsonHint')),
+            h('textarea', {
+              key: 'bulk', value: bulk,
+              onChange: (event) => setBulk(event.target.value),
+              style: { minHeight: '70px', width: '100%', boxSizing: 'border-box', border: '1px solid rgba(127,127,127,0.24)', borderRadius: '10px', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '11.5px', padding: '8px 10px' },
+            }),
+            h('button', {
+              key: 'addFromJson', type: 'button', className: 'ws-chip',
+              onClick: () => {
+                try {
+                  const list = JSON.parse(bulk);
+                  if (Array.isArray(list)) {
+                    setDraft(draft.concat(list.map((item) => ({ ...newChannel(), ...item }))));
+                    setBulk('');
+                  }
+                } catch (error) {
+                  console.warn('work-space: bad channels json', error);
+                }
+              },
+            }, t('addChannel')),
+          ]),
+          h('div', { className: 'ws-section', key: 'channels' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('channelsSettings') + ' (' + draft.length + ')'),
+            ...draft.map((item, index) => h('div', {
+              key: item.id,
+              style: { display: 'flex', gap: '6px', flexWrap: 'wrap', alignItems: 'center', padding: '6px 0', borderBottom: '1px dashed rgba(127,127,127,0.2)' },
+            }, [
+              field(index, 'name', t('name'), '120px'),
+              select(index, 'platform', [{ value: 'telegram', label: 'Telegram' }, { value: 'discord', label: 'Discord' }]),
+              select(index, 'kind', KINDS.map((kind) => ({ value: kind.id, label: t(kind.label) }))),
+              select(index, 'lang', [{ value: 'ru', label: 'RU' }, { value: 'en', label: 'EN' }, { value: 'any', label: '\u2014' }]),
+              field(index, 'chatId', t('chatId'), '120px'),
+              field(index, 'threadId', t('threadId'), '70px'),
+              field(index, 'webhook', t('webhook'), '260px'),
+              h('button', {
+                key: 'del', type: 'button', className: 'ws-chip danger',
+                onClick: () => setDraft(draft.filter((row) => row.id !== item.id)),
+              }, '\u00d7'),
+            ])),
+            h('button', {
+              key: 'add', type: 'button', className: 'ws-chip',
+              onClick: () => setDraft(draft.concat([newChannel()])),
+            }, '+ ' + t('addChannel')),
+          ]),
+        ]),
+        h('div', { className: 'ws-modal-composer', key: 'foot' }, h('div', { className: 'ws-composer-row', key: 'row' }, [
+          h('button', {
+            key: 'save', type: 'button', className: 'ws-chip primary',
+            onClick: () => onSave(draft, secret, apiKey, lang),
+          }, t('saveSettings')),
+          h('button', { key: 'cancel', type: 'button', className: 'ws-chip', onClick: onClose }, t('cancel')),
+        ])),
+      ]));
+    }
+
+    const ICONS = {
+      history: ['M3 4v5h5', 'M3.5 9a9 9 0 1 1 2 7.5', 'M12 7v5l4 2'],
+      star: ['M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.1 5.9-.9z'],
+      bookmark: ['M7 4h10v16l-5-3.4L7 20z'],
+      gear: ['M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z', 'M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.1-.4.1-.8.1-1.2z'],
+      eye: ['M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z', 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'],
+      paperclip: ['M20 11l-8.5 8.5a5 5 0 0 1-7-7L13 4a3.5 3.5 0 0 1 5 5l-8.5 8.5a2 2 0 0 1-3-3L15 6'],
+      trash: ['M4 7h16', 'M10 7V5h4v2', 'M6 7l1 13h10l1-13'],
+      image: ['M4 5h16v14H4z', 'M4 15l4-4 3 3 3-3 6 6', 'M9 9.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'],
+    };
+
+    function Icon({ name, size }) {
+      const paths = ICONS[name] || ICONS.star;
+      return h('svg', {
+        viewBox: '0 0 24 24', width: size || 16, height: size || 16,
+        fill: 'none', stroke: 'currentColor', strokeWidth: 1.6,
+        strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': 'true',
+        style: { display: 'block' },
+      }, paths.map((d, index) => h('path', { key: String(index), d })));
+    }
+    function escapeHtml(value) {
+      return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    /** Мини-конвертер Markdown в HTML для превью и Telegram. */
+    function mdToHtml(source) {
+      let text = escapeHtml(source);
+      text = text.replace(/```([\s\S]*?)```/g, (match, code) => '<pre>' + code + '</pre>');
+      text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+      text = text.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+      text = text.replace(/__([^_]+)__/g, '<b>$1</b>');
+      text = text.replace(/~~([^~]+)~~/g, '<s>$1</s>');
+      text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2">$1</a>');
+      text = text.replace(/^### (.*)$/gm, '<b>$1</b>');
+      text = text.replace(/^## (.*)$/gm, '<b>$1</b>');
+      text = text.replace(/^# (.*)$/gm, '<b>$1</b>');
+      text = text.replace(/^- (.*)$/gm, '\u2022 $1');
+      return text;
+    }
+    /** Превью: тот же Markdown, но с переносами строк для браузера. */
+    function mdPreview(source) {
+      return mdToHtml(source).replace(/\n/g, '<br>');
+    }
+
+    function dataUrlToBlob(dataUrl) {
+      return fetch(dataUrl).then((response) => response.blob());
+    }
+
+    function DevlogPage({ t, board, statusOf, imagesOf }) {
+      const [channels, setChannels] = useState(() => readJSON(DEVLOG_CHANNELS_KEY, []));
+      const [token, setToken] = useState(() => readText(DEVLOG_TOKEN_KEY));
+      const [deepseek, setDeepseek] = useState(() => readText(DEVLOG_DEEPSEEK_KEY));
+      const [target, setTarget] = useState(() => readText(DEVLOG_TARGET_KEY) || 'en');
+      const [templates, setTemplates] = useState(() => readJSON(DEVLOG_TEMPLATES_KEY, []));
+      const [published, setPublished] = useState(() => readJSON(DEVLOG_PUBLISHED_KEY, {}));
+      const [hidden, setHidden] = useState(() => readJSON(DEVLOG_HIDDEN_KEY, []));
+      const [activeTaskId, setActiveTaskId] = useState('');
+      const [hideAfter, setHideAfter] = useState(false);
+      const [preview, setPreview] = useState(false);
+      const [historyOpen, setHistoryOpen] = useState(false);
+      const [openGroups, setOpenGroups] = useState({ doing: true, done: false, published: false });
+      const [feed, setFeed] = useState(() => readJSON(DEVLOG_FEED_KEY, []));
+      const [kind, setKind] = useState('devlog');
+      const [ru, setRu] = useState('');
+      const [en, setEn] = useState('');
+      const [images, setImages] = useState([]);
+      const [picked, setPicked] = useState([]);
+      const [settingsOpen, setSettingsOpen] = useState(false);
+      const [templatesOpen, setTemplatesOpen] = useState(false);
+      const [tplOpen, setTplOpen] = useState(false);
+      const [tplName, setTplName] = useState('');
+      const [busy, setBusy] = useState(false);
+      const [translating, setTranslating] = useState(false);
+      const [note, setNote] = useState('');
+      const fileInput = useRef(null);
+      const ruRef = useRef(null);
+      const enRef = useRef(null);
+      const [focusField, setFocusField] = useState('ru');
+
+      const eligible = channels.filter((item) => item.kind === kind);
+
+      const allTasks = Array.isArray(board) ? board : [];
+      const statusTask = (task) => (typeof statusOf === 'function' ? statusOf(task) : '');
+      const isPublished = (task) => Object.prototype.hasOwnProperty.call(published, task.id);
+      const groups = [
+        { id: 'doing', label: t('groupDoing'), items: allTasks.filter((task) => statusTask(task) === 'doing' && !isPublished(task) && hidden.indexOf(task.id) < 0) },
+        { id: 'done', label: t('groupDone'), items: allTasks.filter((task) => statusTask(task) === 'done' && !isPublished(task) && hidden.indexOf(task.id) < 0) },
+        { id: 'published', label: t('groupPublished'), items: allTasks.filter((task) => isPublished(task)) },
+      ];
+
+      const fillFromTask = (task) => {
+        const status = typeof statusOf === 'function' ? statusOf(task) : '';
+        const lines = [];
+        lines.push((task.code ? task.code + ' \u2014 ' : '') + task.title);
+        if (task.desc) lines.push('', task.desc);
+        lines.push('', status === 'done' ? 'Готово' : 'В работе');
+        setRu(lines.join('\n'));
+        setKind('devlog');
+        setActiveTaskId(task.id);
+        const found = typeof imagesOf === 'function' ? imagesOf(task) : [];
+        if (found.length > 0) {
+          setImages((current) => {
+            const next = current.slice();
+            for (const src of found) if (next.indexOf(src) < 0) next.push(src);
+            return next.slice(0, 10);
+          });
+        }
+      };
+
+      useEffect(() => {
+        setPicked(eligible.map((item) => item.id));
+      }, [kind, channels.length]);
+
+      const toggle = (id) => {
+        setPicked(picked.indexOf(id) >= 0 ? picked.filter((item) => item !== id) : picked.concat([id]));
+      };
+
+      const saveSettings = (nextChannels, nextToken, nextKey, nextTarget) => {
+        setChannels(nextChannels);
+        writeJSON(DEVLOG_CHANNELS_KEY, nextChannels);
+        setToken(nextToken);
+        writeText(DEVLOG_TOKEN_KEY, nextToken);
+        setDeepseek(nextKey);
+        writeText(DEVLOG_DEEPSEEK_KEY, nextKey);
+        setSettingsOpen(false);
+      };
+
+      const acceptFile = (files) => {
+        const file = files && files[0];
+        if (!file || typeof file.type !== 'string' || !file.type.startsWith('image/')) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          const raw = typeof reader.result === 'string' ? reader.result : '';
+          if (raw === '') return;
+          const img = new Image();
+          img.onload = () => {
+            const max = 1600;
+            const scale = Math.min(1, max / Math.max(img.width, img.height));
+            const canvas = document.createElement('canvas');
+            canvas.width = Math.max(1, Math.round(img.width * scale));
+            canvas.height = Math.max(1, Math.round(img.height * scale));
+            const context = canvas.getContext('2d');
+            if (context === null) return;
+            context.drawImage(img, 0, 0, canvas.width, canvas.height);
+            const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+            setImages((current) => current.concat([dataUrl]).slice(0, 10));
+          };
+          img.src = raw;
+        };
+        reader.readAsDataURL(file);
+      };
+
+      const send = async () => {
+        if (busy) return;
+        if (ru.trim() === '' && en.trim() === '') return;
+        setBusy(true);
+        setNote('');
+        const chosen = eligible.filter((item) => picked.indexOf(item.id) >= 0);
+        const results = [];
+        const blobs = [];
+        for (const src of images) {
+          try { blobs.push(await dataUrlToBlob(src)); } catch (error) { /* skip broken image */ }
+        }
+        for (const channel of chosen) {
+          const text = channel.lang === 'en' ? (en.trim() !== '' ? en.trim() : ru.trim()) : (ru.trim() !== '' ? ru.trim() : en.trim());
+          try {
+            if (channel.platform === 'telegram') {
+              if (token === '') throw new Error('no token');
+              const base = 'https://api.telegram.org/bot' + token;
+              const thread = channel.threadId !== '' && channel.threadId !== undefined ? Number(channel.threadId) : null;
+              let response;
+              if (blobs.length === 0) {
+                const body = { chat_id: String(channel.chatId || ''), text: mdToHtml(text), parse_mode: 'HTML' };
+                if (thread !== null) body.message_thread_id = thread;
+                response = await fetch(base + '/sendMessage', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(body),
+                });
+              } else if (blobs.length === 1) {
+                const form = new FormData();
+                form.append('chat_id', String(channel.chatId || ''));
+                if (thread !== null) form.append('message_thread_id', String(thread));
+                form.append('caption', mdToHtml(text.slice(0, 1024)));
+                form.append('parse_mode', 'HTML');
+                form.append('photo', blobs[0], 'photo.jpg');
+                response = await fetch(base + '/sendPhoto', { method: 'POST', body: form });
+              } else {
+                const form = new FormData();
+                form.append('chat_id', String(channel.chatId || ''));
+                if (thread !== null) form.append('message_thread_id', String(thread));
+                const media = blobs.map((blob, index) => ({
+                  type: 'photo',
+                  media: 'attach://photo' + index,
+                  ...(index === 0 ? { caption: mdToHtml(text.slice(0, 1024)), parse_mode: 'HTML' } : {}),
+                }));
+                form.append('media', JSON.stringify(media));
+                blobs.forEach((blob, index) => form.append('photo' + index, blob, 'photo' + index + '.jpg'));
+                response = await fetch(base + '/sendMediaGroup', { method: 'POST', body: form });
+              }
+              const data = await response.json();
+              if (!response.ok || !data || data.ok !== true) throw new Error((data && data.description) || ('HTTP ' + response.status));
+              results.push({ name: channel.name, ok: true });
+            } else {
+              if (!channel.webhook) throw new Error('no webhook');
+              let response;
+              if (blobs.length === 0) {
+                response = await fetch(channel.webhook + '?wait=true', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ content: text }),
+                });
+              } else {
+                const form = new FormData();
+                form.append('payload_json', JSON.stringify({ content: text }));
+                blobs.forEach((blob, index) => form.append('files[' + index + ']', blob, 'photo' + index + '.jpg'));
+                response = await fetch(channel.webhook + '?wait=true', { method: 'POST', body: form });
+              }
+              if (!response.ok) throw new Error('HTTP ' + response.status);
+              results.push({ name: channel.name, ok: true });
+            }
+          } catch (error) {
+            results.push({ name: channel.name, ok: false, error: error && error.message ? error.message : String(error) });
+          }
+        }
+        const anyOk = results.some((item) => item.ok);
+        if (anyOk && activeTaskId !== '' && hideAfter) {
+          const nextPublished = { ...published, [activeTaskId]: Date.now() };
+          setPublished(nextPublished);
+          writeJSON(DEVLOG_PUBLISHED_KEY, nextPublished);
+          const nextHidden = hidden.indexOf(activeTaskId) >= 0 ? hidden : hidden.concat([activeTaskId]);
+          setHidden(nextHidden);
+          writeJSON(DEVLOG_HIDDEN_KEY, nextHidden);
+          setHideAfter(false);
+        }
+        const entry = { at: Date.now(), kind, ru, en, results };
+        const nextFeed = [entry].concat(feed).slice(0, 50);
+        setFeed(nextFeed);
+        writeJSON(DEVLOG_FEED_KEY, nextFeed);
+        setBusy(false);
+        setNote(results.length === 0 ? t('noChannels') : results.every((item) => item.ok) ? t('sent') : t('someFailed'));
+      };
+      const translate = () => {
+        if (translating) return;
+        if (deepseek === '') { setNote(t('needKey')); return; }
+        if (ru.trim() === '') return;
+        setTranslating(true);
+        const language = LANGS.find((item) => item.code === target) || LANGS[0];
+        fetch('https://api.deepseek.com/chat/completions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + deepseek },
+          body: JSON.stringify({
+            model: 'deepseek-flash',
+            temperature: 0.2,
+            messages: [
+              { role: 'system', content: 'Translate the user text to ' + language.label + ' for a social post. Keep line breaks and emoji. Reply with the translation only.' },
+              { role: 'user', content: ru },
+            ],
+          }),
+        }).then((response) => response.json()).then((data) => {
+          if (data && data.error && data.error.message) {
+            setNote(String(data.error.message));
+            setTranslating(false);
+            return;
+          }
+          const choice = data && data.choices && data.choices[0];
+          const text = choice && choice.message && typeof choice.message.content === 'string' ? choice.message.content.trim() : '';
+          if (text !== '') {
+            setEn(text);
+          } else {
+            setNote(t('someFailed'));
+          }
+          setTranslating(false);
+        }).catch((error) => {
+          console.warn('work-space: translate failed', error);
+          setTranslating(false);
+          setNote(t('someFailed'));
+        });
+      };
+
+      const saveTemplate = () => {
+        const name = tplName.trim();
+        if (name === '') { setNote(t('templateName')); return; }
+        const next = templates.concat([{ id: 'tpl-' + Date.now().toString(36), name, kind, ru, en }]);
+        setTemplates(next);
+        writeJSON(DEVLOG_TEMPLATES_KEY, next);
+        setTplName('');
+        setTplOpen(false);
+        setNote(t('templateSaved'));
+      };
+
+      const applyTemplate = (template) => {
+        setKind(template.kind);
+        setRu(template.ru || '');
+        setEn(template.en || '');
+        setTemplatesOpen(false);
+      };
+
+      const kindChips = KINDS.map((item) => h('button', {
+        key: item.id, type: 'button',
+        className: 'ws-chip' + (kind === item.id ? ' primary' : ''),
+        onClick: () => setKind(item.id),
+      }, t(item.label)));
+
+      const channelChips = eligible.map((channel) => h('label', {
+        key: channel.id, className: 'ws-channel',
+      }, [
+        h('input', { key: 'check', type: 'checkbox', checked: picked.indexOf(channel.id) >= 0, onChange: () => toggle(channel.id) }),
+        h('span', { key: 'name' }, channel.name || channel.id),
+      ]));
+
+      const wrapMarkdown = (prefix, suffix, placeholder) => {
+        const isEn = focusField === 'en' && kind === 'devlog';
+        const ref = isEn ? enRef : ruRef;
+        const value = isEn ? en : ru;
+        const apply = isEn ? setEn : setRu;
+        const element = ref.current;
+        if (!element) return;
+        const start = typeof element.selectionStart === 'number' ? element.selectionStart : value.length;
+        const end = typeof element.selectionEnd === 'number' ? element.selectionEnd : start;
+        const selected = value.slice(start, end) || placeholder || '';
+        const next = value.slice(0, start) + prefix + selected + suffix + value.slice(end);
+        apply(next);
+        window.requestAnimationFrame(() => {
+          element.focus();
+          const position = start + prefix.length + selected.length;
+          if (typeof element.setSelectionRange === 'function') element.setSelectionRange(position, position);
+        });
+      };
+
+      const mdButtons = [
+        { key: 'b', glyph: 'B', prefix: '**', suffix: '**', placeholder: 'текст', title: 'bold' },
+        { key: 'i', glyph: 'I', prefix: '*', suffix: '*', placeholder: 'курсив', title: 'italic' },
+        { key: 's', glyph: 'S', prefix: '~~', suffix: '~~', placeholder: 'текст', title: 'strike' },
+        { key: 'code', glyph: '</>', prefix: '`', suffix: '`', placeholder: 'код', title: 'code' },
+        { key: 'link', glyph: 'A', prefix: '[', suffix: '](https://)', placeholder: 'ссылка', title: 'link' },
+        { key: 'list', glyph: '\u2022', prefix: '- ', suffix: '', placeholder: 'пункт', title: 'list' },
+        { key: 'head', glyph: 'H', prefix: '## ', suffix: '', placeholder: 'Заголовок', title: 'heading' },
+      ];
+
+      const mdToolbar = h('div', { className: 'ws-editor-toolbar', key: 'md' }, mdButtons.map((button) => h('button', {
+        key: button.key, type: 'button', className: 'ws-md-btn', title: button.title,
+        onMouseDown: (event) => { event.preventDefault(); wrapMarkdown(button.prefix, button.suffix, button.placeholder); },
+      }, button.glyph)));
+
+      const iconBtn = (key, glyph, title, onClick) => h('button', {
+        key, type: 'button', className: 'ws-icon-btn', title, onClick,
+      }, glyph);
+
+      const composer = h('div', { className: 'ws-composer-card', key: 'composer' }, [
+        h('div', { className: 'ws-composer-top', key: 'top' }, [
+          h('div', { className: 'ws-segment', key: 'kinds' }, kindChips),
+          h('div', { className: 'ws-toolbar', key: 'tools' }, [
+            iconBtn('history', h(Icon, { name: 'history' }), t('history'), () => setHistoryOpen(true)),
+            iconBtn('templates', h(Icon, { name: 'star' }), t('templates'), () => setTemplatesOpen(true)),
+            iconBtn('saveTpl', h(Icon, { name: 'bookmark' }), t('saveTemplate'), () => setTplOpen(true)),
+            iconBtn('settings', h(Icon, { name: 'gear' }), t('settings'), () => setSettingsOpen(true)),
+          ]),
+        ]),
+        h('div', { className: 'ws-section', key: 'tasks' }, [
+          h('span', { className: 'ws-section-label', key: 'label' }, t('tasksSection')),
+          h('div', { className: 'ws-spoiler-row', key: 'row' }, groups.map((group) => h('button', {
+            key: group.id, type: 'button',
+            className: 'ws-spoiler-head' + (openGroups[group.id] ? ' open' : ''),
+            onClick: () => setOpenGroups({ ...openGroups, [group.id]: !openGroups[group.id] }),
+          }, [
+            h('span', { key: 'label' }, (openGroups[group.id] ? '\u25be ' : '\u25b8 ') + group.label),
+            h('span', { className: 'ws-spoiler-count', key: 'count' }, String(group.items.length)),
+          ]))),
+          ...groups.map((group) => (openGroups[group.id] ? h('div', { className: 'ws-task-list', key: 'list-' + group.id }, group.items.length === 0
+            ? h('span', { className: 'ws-composer-hint', key: 'empty' }, t('emptyList'))
+            : group.items.map((task) => {
+              const previewImage = typeof imageOf === 'function' ? imageOf(task) : '';
+              return h('button', {
+                key: task.id, type: 'button',
+                className: 'ws-task-item' + (task.id === activeTaskId ? ' active' : ''),
+                onClick: () => fillFromTask(task),
+              }, [
+                previewImage !== ''
+                  ? h('img', { className: 'ws-task-thumb', key: 'img', src: previewImage, alt: '' })
+                  : h('span', { className: 'ws-task-thumb ws-task-thumb-empty', key: 'ph' }, h(Icon, { name: 'image', size: 14 })),
+                h('span', { key: 'title' }, (task.code ? task.code + ' ' : '') + task.title),
+              ]);
+            })) : null)),
+        ]),
+        h('div', { className: 'ws-editor', key: 'editor' }, [
+          h('div', { className: 'ws-editor-head', key: 'ruhead' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('postRu')),
+            h('div', { className: 'ws-head-tools', key: 'tools' }, [
+              mdToolbar,
+              iconBtn('preview', h(Icon, { name: 'eye' }), t('preview'), () => setPreview(!preview)),
+            ]),
+          ]),
+          preview
+            ? h('div', { className: 'ws-preview', key: 'rup', dangerouslySetInnerHTML: { __html: mdPreview(ru) } })
+            : h('textarea', {
+                key: 'ru', value: ru, placeholder: t('postRu'), ref: ruRef, onFocus: () => setFocusField('ru'),
+                onChange: (event) => setRu(event.target.value),
+                onPaste: (event) => {
+                  const files = event.clipboardData ? event.clipboardData.files : null;
+                  if (files && files.length > 0) { event.preventDefault(); acceptFile(files); }
+                },
+                style: { minHeight: '110px' },
+              }),
+          kind === 'devlog' ? h('div', { className: 'ws-editor-head', key: 'enhead' }, [
+            h('span', { className: 'ws-section-label', key: 'label' }, t('postEn')),
+            h('button', {
+              key: 'translate', type: 'button', className: 'ws-chip',
+              disabled: translating, onClick: translate,
+            }, translating ? t('translating') : t('translate')),
+          ]) : null,
+          kind === 'devlog' ? h('textarea', {
+            key: 'en', value: en, placeholder: t('postEn'), ref: enRef, onFocus: () => setFocusField('en'),
+            onChange: (event) => setEn(event.target.value),
+            style: { minHeight: '80px' },
+          }) : null,
+        ]),
+        images.length === 0 ? null : h('div', { className: 'ws-gallery', key: 'gallery' }, images.map((src, index) => h('div', { className: 'ws-gallery-item', key: String(index) }, [
+          h('img', { key: 'img', src: src, alt: '' }),
+          h('button', {
+            key: 'rm', type: 'button', className: 'ws-gallery-remove', title: t('removeImage'),
+            onClick: () => setImages((current) => current.filter((item, position) => position !== index)),
+          }, '\u00d7'),
+        ]))),
+        h('div', { className: 'ws-composer-row', key: 'channels' },
+          eligible.length === 0 ? h('span', { className: 'ws-composer-hint' }, t('noChannels')) : channelChips),
+        h('div', { className: 'ws-composer-row', key: 'actions' }, [
+          h('button', { key: 'send', type: 'button', className: 'ws-chip primary ws-publish', disabled: busy, onClick: send }, busy ? t('publishing') : t('publish')),
+          iconBtn('attach', h(Icon, { name: 'paperclip' }), t('attach'), () => { if (fileInput.current) fileInput.current.click(); }),
+          h('input', {
+            key: 'file', type: 'file', accept: 'image/*', ref: fileInput, style: { display: 'none' },
+            onChange: (event) => acceptFile(event.target.files),
+          }),
+          h('label', { className: 'ws-hide-check', key: 'hide' }, [
+            h('input', {
+              key: 'check', type: 'checkbox', checked: hideAfter,
+              disabled: activeTaskId === '',
+              onChange: (event) => setHideAfter(event.target.checked),
+            }),
+            h('span', { key: 'text' }, t('hideFromSuggestions')),
+          ]),
+          note === '' ? null : h('span', { key: 'note', className: 'ws-composer-hint' }, note),
+        ]),
+      ]);
+      const historyModal = !historyOpen ? null : h('div', {
+        className: 'ws-modal-mask',
+        onMouseDown: (event) => { if (event.target === event.currentTarget) setHistoryOpen(false); },
+      }, h('div', { className: 'ws-modal', style: { width: 'min(720px, 100%)' } }, [
+        h('div', { className: 'ws-modal-top', key: 'top' }, [
+          h('h2', { className: 'ws-modal-title', key: 'title' }, t('history')),
+          h('button', { key: 'close', type: 'button', className: 'ws-modal-close', onClick: () => setHistoryOpen(false) }, '\u00d7'),
+        ]),
+        h('div', { className: 'ws-modal-body', key: 'body' }, feed.length === 0
+          ? h('div', { className: 'ws-post-empty' }, t('history') + ': \u2014')
+          : feed.map((entry, index) => h('div', { key: String(index), className: 'ws-post' }, [
+              h('div', { className: 'ws-post-head', key: 'head' }, [
+                h('span', { className: 'ws-sha', key: 'kind' }, t((KINDS.find((item) => item.id === entry.kind) || KINDS[0]).label)),
+                h('span', { className: 'ws-post-date', key: 'date' }, formatDate(entry.at)),
+              ]),
+              h('div', {
+                key: 'text', className: 'ws-post-text',
+                dangerouslySetInnerHTML: { __html: mdPreview(entry.ru || entry.en || '') },
+              }),
+              h('div', { className: 'ws-commit-meta', key: 'meta' },
+                entry.results.map((item) => (item.ok ? '\u2713 ' : '\u2715 ') + item.name).join('  ')),
+            ]))),
+      ]));
+      const templatesModal = !templatesOpen ? null : h('div', {
+        className: 'ws-modal-mask',
+        onMouseDown: (event) => { if (event.target === event.currentTarget) setTemplatesOpen(false); },
+      }, h('div', { className: 'ws-modal', style: { width: 'min(560px, 100%)' } }, [
+        h('div', { className: 'ws-modal-top', key: 'top' }, [
+          h('h2', { className: 'ws-modal-title', key: 'title' }, t('templates')),
+          h('button', { key: 'close', type: 'button', className: 'ws-modal-close', onClick: () => setTemplatesOpen(false) }, '\u00d7'),
+        ]),
+        h('div', { className: 'ws-modal-body', key: 'body' },
+          templates.length === 0
+            ? h('div', { className: 'ws-post-empty' }, t('noTemplates'))
+            : templates.map((template) => h('div', { key: template.id, className: 'ws-composer-row' }, [
+                h('button', {
+                  key: 'apply', type: 'button', className: 'ws-chip',
+                  onClick: () => applyTemplate(template),
+                }, t('insert') + ': ' + template.name),
+                h('button', {
+                  key: 'del', type: 'button', className: 'ws-chip danger',
+                  onClick: () => {
+                    const next = templates.filter((item) => item.id !== template.id);
+                    setTemplates(next);
+                    writeJSON(DEVLOG_TEMPLATES_KEY, next);
+                  },
+                }, '\u00d7'),
+              ]))),
+      ]));
+
+      return h(React.Fragment, null, [
+        h('div', { className: 'ws-commits', key: 'composer' }, [composer]),
+        historyModal,
+        settingsOpen ? h(DevlogSettings, {
+          key: 'settings', t, channels, token, deepseek, target,
+          onSave: saveSettings,
+          onClose: () => setSettingsOpen(false),
+        }) : null,
+        templatesModal,
+        tplOpen ? h('div', {
+          className: 'ws-modal-mask',
+          onMouseDown: (event) => { if (event.target === event.currentTarget) setTplOpen(false); },
+        }, h('div', { className: 'ws-modal', style: { width: 'min(420px, 100%)' } }, [
+          h('div', { className: 'ws-modal-top', key: 'top' }, [
+            h('h2', { className: 'ws-modal-title', key: 'title' }, t('saveTemplate')),
+            h('button', { key: 'close', type: 'button', className: 'ws-modal-close', onClick: () => setTplOpen(false) }, '\u00d7'),
+          ]),
+          h('div', { className: 'ws-modal-body', key: 'body' }, h('input', {
+            key: 'name', type: 'text', value: tplName, placeholder: t('templateName'),
+            onChange: (event) => setTplName(event.target.value),
+            onKeyDown: (event) => { if (event.key === 'Enter') saveTemplate(); },
+            style: { height: '30px', padding: '0 9px', borderRadius: '8px', border: '1px solid rgba(127,127,127,0.24)', background: 'transparent', color: 'inherit', font: 'inherit', fontSize: '12px' },
+          })),
+          h('div', { className: 'ws-modal-composer', key: 'foot' }, h('div', { className: 'ws-composer-row', key: 'row' }, [
+            h('button', { key: 'save', type: 'button', className: 'ws-chip primary', onClick: saveTemplate }, t('save')),
+            h('button', { key: 'cancel', type: 'button', className: 'ws-chip', onClick: () => setTplOpen(false) }, t('cancel')),
+          ])),
+        ])) : null,
+      ]);
+    }
     // ---------- доска ----------
 
     class TasksBoundary extends React.Component {
@@ -1150,6 +2085,7 @@
       const [clearConfirm, setClearConfirm] = useState(false);
       const [restoreTarget, setRestoreTarget] = useState(null);
       const [refreshing, setRefreshing] = useState(false);
+      const [importNote, setImportNote] = useState('');
       const [refreshNote, setRefreshNote] = useState('');
       const [deletedTick, setDeletedTick] = useState(0);
       const [pickerOpen, setPickerOpen] = useState(false);
@@ -1352,7 +2288,7 @@
           'Отмени коммит ' + sha + (message === '' ? '' : ' («' + message + '»)') + ' через git revert.',
           'Историю не переписывай: создай новый коммит с откатом.',
           'Сначала проверь git status и предупреди, если незакоммиченные изменения помешают.',
-          'После отката обнови .workspace/commits.json.',
+          'После отката обнови .kb/commits.json.',
         ].join('\n');
         if (typeof props.discussTask === 'function') props.discussTask(selected, effectiveMain, text);
       };
@@ -1410,7 +2346,7 @@
         });
       };
 
-      // Живое обновление: читаем .workspace/commits.json из папки проекта.
+      // Живое обновление: читаем .kb/commits.json из папки проекта.
       useEffect(() => {
         if (tab !== 'commits' || projectPath === '' || typeof props.refreshCommits !== 'function') return undefined;
         let alive = true;
@@ -1434,7 +2370,8 @@
         const reader = new FileReader();
         reader.onload = () => {
           try {
-            const parsed = JSON.parse(String(reader.result));
+            const raw = String(reader.result).replace(/^\uFEFF/, '');
+            const parsed = JSON.parse(raw);
             if (parsed && Array.isArray(parsed.commits)) {
               applyCommitsDoc(parsed);
               setTab('commits');
@@ -1444,14 +2381,25 @@
             if (Array.isArray(parsed)) {
               saveBoard(projectPath, parsed);
               setBoardTick((value) => value + 1);
+              setTab('tasks');
+              writeText(TAB_KEY, 'tasks');
+              setImportNote(t('importDone') + parsed.length);
               return;
             }
             if (!parsed || typeof parsed !== 'object') return;
             if (parsed.statuses && typeof parsed.statuses === 'object') { setStatuses(parsed.statuses); writeJSON(STATUS_KEY, parsed.statuses); }
             if (parsed.links && typeof parsed.links === 'object') { setLinks(parsed.links); writeJSON(LINKS_KEY, parsed.links); }
-            if (Array.isArray(parsed.board)) { saveBoard(projectPath, parsed.board); setBoardTick((value) => value + 1); }
+            if (!Array.isArray(parsed.board)) { setImportNote('Файл не похож на доску задач'); return; }
+            if (Array.isArray(parsed.board)) {
+              saveBoard(projectPath, parsed.board);
+              setBoardTick((value) => value + 1);
+              setTab('tasks');
+              writeText(TAB_KEY, 'tasks');
+              setImportNote(t('importDone') + parsed.board.length);
+            }
           } catch (error) {
             console.warn('work-space: import failed', error);
+            setImportNote('Ошибка импорта: ' + (error && error.message ? error.message : String(error)));
           }
         };
         reader.readAsText(file);
@@ -1521,7 +2469,7 @@
           'Текущие задачи: ' + (board.length === 0 ? 'пока нет' : board.map((task) => task.title).join('; ')) + '.',
           '',
           'Задай вопросы по одному, как в discovery-interview, и в конце предложи готовую задачу (название, что сделать, как делать).',
-          'Затем запиши обновлённый файл .workspace/tasks.json и напомни нажать Импорт на доске.',
+          'Затем запиши обновлённый файл .kb/tasks.json и напомни нажать Импорт на доске.',
         ].join('\n'));
       };
 
@@ -1796,6 +2744,10 @@
               key: 'commits', type: 'button', className: 'ws-tab' + (tab === 'commits' ? ' active' : ''),
               onClick: () => { setTab('commits'); writeText(TAB_KEY, 'commits'); },
             }, t('tabCommits')),
+            h('button', {
+              key: 'devlog', type: 'button', className: 'ws-tab' + (tab === 'devlog' ? ' active' : ''),
+              onClick: () => { setTab('devlog'); writeText(TAB_KEY, 'devlog'); },
+            }, t('tabDevlog')),
           ]),
           h('div', { className: 'ws-tools', key: 'tools' }, [
             h('div', { className: 'ws-tool', key: 'picker' }, [
@@ -1888,7 +2840,7 @@
             ]),
           ]),
         ]),
-        tab === 'tasks' ? h('div', { key: 'board' }, boardView) : commitsContent,
+        tab === 'tasks' ? h('div', { key: 'board' }, boardView) : (tab === 'devlog' ? h('div', { key: 'devlog' }, h(DevlogPage, { t, board, statusOf: (task) => entryOf(task).status, imagesOf: (task) => { const entry = entryOf(task); return entry.posts.map((post) => (typeof post.image === 'string' ? post.image : '')).filter((src) => src !== '').slice(-6); } })) : commitsContent),
         h('div', { className: 'ws-tasks-foot', key: 'foot' }, [
           h('span', { key: 'c1' }, t('todo') + ' ' + counts.todo),
           h('span', { key: 'c2' }, t('doing') + ' ' + counts.doing),
@@ -1896,6 +2848,8 @@
           h('span', { key: 'c4' }, t('archived') + ' ' + counts.archived),
           h('span', { key: 'c5' }, t('deleted') + ' ' + counts.deleted),
           h('span', { key: 'path' }, projectPath),
+          h('span', { key: 'count' }, 'Задач: ' + board.length),
+          importNote === '' ? null : h('span', { key: 'note' }, importNote),
         ]),
       ]);
 
@@ -1983,6 +2937,10 @@
           document.head.append(style);
           return () => style.remove();
         }, 'work-space: styles');
+
+        ctx.effect(() => {
+          migrateLegacyStorage();
+        }, 'work-space: storage migration');
 
         ctx.effect(() => {
           dropLegacyBoards();
