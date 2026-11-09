@@ -1,0 +1,3 @@
+- insert:
+    - id: composer-actions
+      name: 'dsh-composer-actions'
